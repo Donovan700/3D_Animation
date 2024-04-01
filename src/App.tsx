@@ -1,10 +1,11 @@
 import './App.css'
+import CarViewer from './components/carviewer/carviewer'
 
 function App() {
 
   return (
     <>
-    <h1>Hello</h1>
+      <CarViewer />
     </>
   )
 }
