@@ -1,11 +1,11 @@
 import './App.css'
-import CarViewer from './components/carviewer/carviewer'
+import Layout from './components/layout'
 
 function App() {
 
   return (
     <>
-      <CarViewer />
+      <Layout />
     </>
   )
 }

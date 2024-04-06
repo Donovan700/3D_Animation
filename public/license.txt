@@ -1,0 +1,11 @@
+Model Information:
+* title:	BMW 3 Series touring (E46) 2001
+* source:	https://sketchfab.com/3d-models/bmw-3-series-touring-e46-2001-478330312c3d46fd94999c3133ce0366
+* author:	Luquita (https://sketchfab.com/speedmodel)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "BMW 3 Series touring (E46) 2001" (https://sketchfab.com/3d-models/bmw-3-series-touring-e46-2001-478330312c3d46fd94999c3133ce0366) by Luquita (https://sketchfab.com/speedmodel) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
