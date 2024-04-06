@@ -1,27 +1,31 @@
 import { Suspense } from 'react';
 import { Canvas, useLoader } from 'react-three-fiber';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
-import { OrbitControls } from '@react-three/drei';
+import { OrbitControls, Environment } from '@react-three/drei';
+import { LayoutProps } from './type';
+import { ModelProps } from './type';
 
-const Layout = () => {
-  return (
-    <div className="flex justify-center items-center h-screen">
-      <Canvas className="w-1/2 h-1/2 border-4 border-gray-800">
-        <ambientLight intensity={10} />
-        <pointLight position={[10, 10, 10]} />
-        <OrbitControls />
-        <Suspense fallback={null}>
-          <Model />
-        </Suspense>
-      </Canvas>
-    </div>
-  );
-};
+export default function Layout(props: LayoutProps) {
+  const { path } = props;
+  return(
+    <>
+      <div className="flex bg-gray-400 justify-center items-center h-screen">
+        <Canvas className="w-1/2 h-1/2 border-4 border-gray-800">
+          <ambientLight />
+          <pointLight position={[10, 10, 10]} />
+          <OrbitControls />
+          <Suspense fallback={null}>
+            <Model path={path} />
+          </Suspense>
+          <Environment preset='sunset' />
+        </Canvas>
+      </div>
+    </>
+  )
+}
 
-const Model = () => {
-  const path = './206.gltf';
+function Model(props: ModelProps) {
+  const { path } = props;
   const gltf = useLoader(GLTFLoader, path);
   return <primitive object={gltf.scene} />;
-};
-
-export default Layout;
+}

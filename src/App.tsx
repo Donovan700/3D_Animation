@@ -5,7 +5,7 @@ function App() {
 
   return (
     <>
-      <Layout />
+      <Layout path='/Course/918/918.gltf' />
     </>
   )
 }
